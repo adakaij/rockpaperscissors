@@ -16,7 +16,7 @@ $(document).ready(function(){
     var randomNumber = 0;
     
     $("#shoot").click(function(){
-        var userInput = $("#input").val();
+        var userInput = $("#input").val().toLowerCase();
         randomNumber = Math.random();
         if((userInput === "rock") || (userInput === "scissors") || (userInput === "paper")){
             $("#userChoice").text(userInput);
